@@ -35,4 +35,19 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Happy 22nd Birthday for Nancy! <3
+# Happy 22nd Birthday for Nancy! <3
+
+## Design
+
+## Phase 1: Envelope
+- Pink and purple envelope with pastel yellow background
+- On hover on the envelope
+  - Slight enlargement of envelope
+  - Top of envelope opens
+  - Paper that says "Happy birthday!" slips up a little
+- On unhover
+  - Return to default state
+- On click
+  - Envelope fade away
+  - Confetti coming down from screen
+  - Closed birthday card shows up
