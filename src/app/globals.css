@@ -16,6 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 0;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .letter {

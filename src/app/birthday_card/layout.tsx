@@ -1,10 +1,3 @@
-import type { Metadata } from "next";
-import "./globals.css";
-
-export const metadata: Metadata = {
-  title: "Hi Nancy!",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -12,6 +5,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Happy birthday Nancy!!!</title>
+      </head>
       <body>{children}</body>
     </html>
   );
