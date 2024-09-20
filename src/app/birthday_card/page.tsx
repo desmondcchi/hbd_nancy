@@ -4,12 +4,19 @@ import styles from "./birthday_card.module.scss";
 import JSConfetti from "js-confetti";
 import { useEffect, useCallback } from "react";
 
-export default function BirthdayCard() {
-  const sprayConfetti = useCallback(() => {
-    const jsConfetti = new JSConfetti();
-    jsConfetti.addConfetti();
-  }, []);
+function sprayConfetti() {
+  const jsConfetti = new JSConfetti();
+  jsConfetti.addConfetti();
+}
 
+function sprayHeartConfetti() {
+  const jsConfetti = new JSConfetti();
+  jsConfetti.addConfetti({
+    emojis: ["❤️", "😍", "😻", "🥳", "💕"],
+  });
+}
+
+export default function BirthdayCard() {
   // Trigger confetti on page load/render.
   useEffect(() => {
     sprayConfetti();
@@ -35,10 +42,12 @@ export default function BirthdayCard() {
             sending lots of love.
           </p>
           <br />
-          <p className={styles.align_right}>
-            Love you,
-            <br />
-            Desmond
+          <p className={styles.align_right} onClick={sprayHeartConfetti}>
+            <a href="#">
+              Love you,
+              <br />
+              Desmond
+            </a>
           </p>
         </div>
       </div>
