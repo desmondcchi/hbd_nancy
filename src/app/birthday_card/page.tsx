@@ -3,7 +3,6 @@
 import styles from "./birthday_card.module.scss";
 import JSConfetti from "js-confetti";
 import { useEffect, useCallback } from "react";
-import Image from "next/image";
 
 export default function BirthdayCard() {
   const sprayConfetti = useCallback(() => {
