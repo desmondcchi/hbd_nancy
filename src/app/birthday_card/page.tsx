@@ -2,7 +2,7 @@
 
 import styles from "./birthday_card.module.scss";
 import JSConfetti from "js-confetti";
-import { useEffect, useCallback } from "react";
+import { useEffect } from "react";
 
 function sprayConfetti() {
   const jsConfetti = new JSConfetti();
