@@ -25,10 +25,10 @@ export default function BirthdayCard() {
   return (
     <div className={styles.wrapper}>
       <div className={`${styles.front} ${styles.inner}`}>
-        <img src="/images/me_and_u.png"></img>
+        <img src="./images/me_and_u.png"></img>
       </div>
       <div className={`${styles.front} ${styles.outer}`}>
-        <img src="/images/happy_birthday.jpg"></img>
+        <img src="./images/happy_birthday.jpg"></img>
       </div>
       <div className={styles.letter}>
         <div className={styles.letter_content}>
