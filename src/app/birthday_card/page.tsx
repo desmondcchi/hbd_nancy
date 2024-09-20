@@ -1,8 +1,9 @@
 "use client";
 
-import styles from "./birthday_card.module.css";
+import styles from "./birthday_card.module.scss";
 import JSConfetti from "js-confetti";
 import { useEffect, useCallback } from "react";
+import Image from "next/image";
 
 export default function BirthdayCard() {
   const sprayConfetti = useCallback(() => {
@@ -17,8 +18,12 @@ export default function BirthdayCard() {
 
   return (
     <div className={styles.wrapper}>
-      <div className={`${styles.front} ${styles.closed}`}></div>
-      <div className={`${styles.front} ${styles.opened}`}></div>
+      <div className={`${styles.front} ${styles.inner}`}>
+        <img src="/images/me_and_u.png"></img>
+      </div>
+      <div className={`${styles.front} ${styles.outer}`}>
+        <img src="/images/happy_birthday.jpg"></img>
+      </div>
       <div className={styles.letter}>
         <div className={styles.letter_content}>
           <p>Happy birthday, Nancy!</p>
