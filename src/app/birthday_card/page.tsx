@@ -36,10 +36,11 @@ export default function BirthdayCard() {
           <br />
           <p>
             I hope you have an amazing day today. I wish I could be there in
-            person with you, celebrating your 22nd birthday. I am celebrating
+            person with you to celebrate your 22nd birthday. I am celebrating
             your big day 3000 miles away with the best wishes of joy and
-            happiness for you. Thinking of you lots today (and always) and
-            sending lots of love.
+            happiness for you. I am so lucky to have you in my life and you hold
+            a special place in my heart. Thinking of you lots today (and always)
+            and sending lots of love.
           </p>
           <br />
           <p className={styles.align_right} onClick={sprayHeartConfetti}>
